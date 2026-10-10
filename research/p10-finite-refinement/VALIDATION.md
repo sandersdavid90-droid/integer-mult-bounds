@@ -52,3 +52,26 @@ the inherited paired-cube producer. It had not reached the complete suite's
 end, and is **not a full-suite pass**. No tracked predecessor file changed.
 The successful complete PR317 replay and `make gen4-bank-verify` above are
 separate runs with their own completed results.
+
+## GitHub CI diagnosis and repair
+
+On commit `70da516da528388288cf4d9039f41216407e2a65`, GitHub run
+`38068843499` completed 49 of 52 jobs successfully. The three failures were
+the `joint` group on Python 3.11, 3.13 and 3.14. The downloaded job log
+shows `AssertionError: Makefile` in `joint_dual_compose.check_sources`.
+The same error was reproduced locally with `make verify-joint` before
+the repair. It occurs in an inherited source-hash check, not in the new
+finite refinement. The three separate gen4, recycled-bit and terminal
+workflows also passed on that commit.
+
+Rohan Arun's PR318 (`a45747d2559141a594916475f52642e4fab86e02`) is incorporated
+with attribution. It updates the expected root Makefile/README digests and
+the two legacy certificates that bind their source manifest. No check is
+disabled and no mathematical value changes. After the repair, all 16
+`tests/test_joint_reclaim.py` tests passed locally.
+
+The original branch had no dedicated GitHub workflow for the new package;
+its refinement validation was local. The added `Verify PR317 finite
+refinement` workflow now runs the complete pinned PR317 source replay and
+the refined arithmetic on Python 3.11 and 3.13. CI results for a new commit
+must be read from its own run; the earlier passes are not relabeled.

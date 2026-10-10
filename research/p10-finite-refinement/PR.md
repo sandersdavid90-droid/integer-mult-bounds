@@ -21,8 +21,16 @@ fallback and all physical charges remain present.
 
 Default verification runs the full PR317 package and its PR315 dependency
 fresh. Optional authenticated replay reuse is explicitly labeled. The
-source is pinned at `0a0b61a7f4601a96036af8bb6a6338c58f035d2e`; no dependency
-files or main's selected result are modified.
+source is pinned at `0a0b61a7f4601a96036af8bb6a6338c58f035d2e`. The finite
+refinement leaves its pinned dependency package and main's selected result
+unchanged.
+
+A separate CI repair incorporates Rohan Arun's PR318 at
+`a45747d2559141a594916475f52642e4fab86e02`: three legacy joint-dual metadata
+files refresh the root Makefile/README hashes and their certificate bindings.
+It fixes the inherited `AssertionError: Makefile` without changing verifier
+checks or mathematics. A dedicated workflow now runs this refinement and
+the full pinned PR317 replay on Python 3.11 and 3.13.
 
 Validation and its limitations are recorded in `VALIDATION.md`.
 The source's all-size interfaces remain conditional; this is not a new

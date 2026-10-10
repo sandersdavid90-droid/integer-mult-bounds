@@ -61,6 +61,11 @@ source replay. The committed certificate is an example result, never a
 substitute for execution. Source execution timings make its provenance
 hash run-specific; the exact arithmetic fields are deterministic.
 
+The `Verify PR317 finite refinement` GitHub workflow runs the full default
+command on Python 3.11 and 3.13. The branch also incorporates Rohan Arun's
+PR318 repair of stale legacy joint-dual source hashes; that metadata fix
+is separate from this construction and preserves the original checks.
+
 ## Limits
 
 This is conditional on the source's all-size compiler, common weighted

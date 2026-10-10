@@ -1,0 +1,53 @@
+name: Verify PR317 finite refinement
+
+on:
+  push:
+    paths:
+      - 'research/p10-finite-refinement/**'
+      - '.github/workflows/p10-finite-refinement.yml'
+  pull_request:
+    paths:
+      - 'research/p10-finite-refinement/**'
+      - '.github/workflows/p10-finite-refinement.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refinement:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Fetch the exact PR317 construction
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: eumemic/integer-mult-bounds
+          ref: 0a0b61a7f4601a96036af8bb6a6338c58f035d2e
+          path: build/pr317
+          persist-credentials: false
+      - name: Install exact-arithmetic dependencies
+        run: |
+          python -m pip install sympy==1.14.0
+          if ! test -f /usr/include/boost/multiprecision/cpp_int.hpp; then
+            sudo apt-get update
+            sudo apt-get install -y libboost-dev
+          fi
+      - name: Replay the full source and check the finite refinement
+        run: |
+          python -B research/p10-finite-refinement/verify.py \
+            --source-root build/pr317 \
+            --output "${{ runner.temp }}/p10-finite-refinement" \
+            --boost-include /usr/include
+      - name: Require unchanged tracked inputs
+        run: git diff --exit-code
