@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "claim": "Scoped exact conversion-boundary results; no kappa improvement",
+  "target_kappa": "1/100",
+  "unit_round_trips": 1020,
+  "all_small_full_products": 21844,
+  "input_bits_for_full_products": [
+    1,
+    7
+  ],
+  "pure_collision_lengths": 125,
+  "augmented_collision_lengths": 125,
+  "collision_input_bits": [
+    4,
+    128
+  ],
+  "nonzero_block_defects": 60,
+  "zero_defect_precision_controls": 30,
+  "pure_example": {
+    "input_pairs": [
+      [
+        5,
+        13
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "products": [
+      65,
+      1
+    ],
+    "precision": 6,
+    "summary": [
+      0,
+      0
+    ]
+  },
+  "augmented_example": {
+    "input_pairs": [
+      [
+        13,
+        21
+      ],
+      [
+        5,
+        29
+      ]
+    ],
+    "products": [
+      273,
+      145
+    ],
+    "precision": 7,
+    "shared_summary": [
+      [
+        0,
+        28
+      ],
+      34,
+      5,
+      5
+    ]
+  },
+  "block_table_example": {
+    "low": 5,
+    "high": 1,
+    "block_bits": 3,
+    "precision": 6,
+    "intended": 13,
+    "independent_decode": 45,
+    "dependent_decode": 13,
+    "mixed_exponent_defect": 8
+  },
+  "complete_codec_example": {
+    "x": 7,
+    "y": 11,
+    "precision": 8,
+    "left_code": [
+      1,
+      10
+    ],
+    "right_code": [
+      1,
+      21
+    ],
+    "product": 77
+  }
+}

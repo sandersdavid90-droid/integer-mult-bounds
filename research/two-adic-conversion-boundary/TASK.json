@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "task_id": "uniform-transfer-audit",
+  "priority_revision": 5,
+  "base_commit": "534de584c7c9b7abd621a0d8cec959d021e5b510",
+  "original_card": {
+    "id": "uniform-transfer-audit",
+    "question": "Can one exact all-size/compiler, precision, hosting or restoration implication be proved or falsified?",
+    "starting_points": [
+      "certificates/selected-result.json",
+      "docs/audit.md"
+    ],
+    "methods": [
+      "Prove one missing implication with explicit quantified hypotheses.",
+      "Find an exact counterexample at the claimed interface boundary."
+    ],
+    "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/research_baseline.py"
+      ],
+      "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+      "inspect": "Read the selected review scope and choose one exact all-size or precision implication.",
+      "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Write its quantified inputs and conclusion; find a missing hypothesis or construct a minimal exact adversarial instance.",
+    "bottleneck_link": "Finite supplier improvements are useful only under the retained transfer obligations.",
+    "allowed_variations": [
+      "Choose one tape, precision, hosting or restoration lemma."
+    ],
+    "scope_change_triggers": [
+      "Replacing a quantified obligation with another finite smoke test."
+    ],
+    "overlap_terms": [
+      "uniform transfer",
+      "all-size",
+      "precision"
+    ]
+  },
+  "scope_status": "changed",
+  "actual_scope": "User-assigned representation search for kappa=1/100: test signed powers of five modulo powers of two, with a fully paid binary-input/binary-output conversion boundary; analyze reduced output precision and one independent block-table pivot.",
+  "scope_change_reason": "The donor explicitly requests a structural change and sets 0.01 as the first milestone, with 0.1 and 0.5 as stretch goals. This replaces weighted allocation and does not extend the selected finite circuit.",
+  "bottleneck_link": "Changing multiplication into exponent addition helps only when both input conversions, output decoding, constant preparation and tape work fit O(n (log n)^0.99). Establish whether precision truncation or independent digit tables can supply that missing saving.",
+  "budget_minutes": 60,
+  "stop_rule": "Prove/test the full algebra first; test exact collisions for a shortened encoded product, then one bounded block-table pivot. Stop these implementations on a scoped failure; do not scale an unchanged search or assert a new kappa without a complete conversion cost proof.",
+  "outcome": "negative-result",
+  "evidence": "RESULT.json and six passing mathematical/behavioral groups: a complete exact unsigned codec, 1,020 unit round trips, 21,844 exhaustive small full products, 250 collision fixtures with one-bit repairs, and the sharp independent-block precision boundary with corrected low-dependent positive controls.",
+  "author": "David (sandersdavid90-droid), with OpenAI Codex assistance",
+  "ai_assistance": "Substantial OpenAI Codex assistance in derivation, implementation, tests and writing. No independent author or proof-assistant review.",
+  "open_questions": [
+    {
+      "question": "Can a fused or dependent conversion implement the full-precision product encoding and binary decode within O(n (log n)^0.99)?",
+      "why_it_matters": "The additive core is linear, but omitted conversion work can contain the complete multiplication problem.",
+      "first_step": "Specify a new coupled conversion interface with all intermediate bit volumes and a complete recurrence; show how it handles the supplied collision and mixed-block fixtures.",
+      "blocked_by": "No favorable complete conversion construction is currently supplied."
+    }
+  ],
+  "target_kappa": "1/100",
+  "stretch_targets": [
+    "1/10",
+    "1/2"
+  ],
+  "optimistic_budget": "Two encodings at product precision plus one decoding, fixed-base constant preparation and O(n) valuation, addition, movement and output. For a fused variant replace this sum by its actual complete cost, never zero out unknown conversion work.",
+  "family_decision": "Stop shortened exponent-sum-only reading, its stated sum/low-bit augmentation, and independent additive block conversion for this canonical code. Do not expand their implementation. General full-precision dependent/shared or fused conversion remains open; no kappa improvement.",
+  "overlap": "Targeted live GitHub PR-body searches for discrete logarithm, logarithmic representation and Sophie yielded no match. Earlier 2-adic hits concern decoder valuations rather than multiplicative number encoding. Read current discussion hubs and board; local helper covered only 8 sparse records and had no cached remote snapshot. This is limited coverage, not a novelty claim. Previous upstream write attempts returned 403; use an accessible fork artifact for publication.",
+  "started_utc": "2026-10-16T01:09:22.620561+00:00",
+  "method": "Classical principal-unit group and 2-adic valuation identities; explicit polynomial product collisions; exact mixed finite difference; separately coded power enumeration and residue checks.",
+  "bounded_pivot": "Independent additive lookup tables on a binary block cut. They work up to precision k+2 and fail at k+3; a low-dependent correction is exact but has no favorable complete cost proof.",
+  "claim_scope": "Written universal statements have precisely specified reader/table hypotheses. Finite replay supports those proofs. No general representation or integer-multiplication lower bound, no fast-conversion theorem and no new kappa.",
+  "predecessor_credit": [
+    "Classical structure of units modulo powers of two and inverse-power bit lifting",
+    "Classical Sophie Germain factorization",
+    "Caruso, Mezzarobba, Takayama and Vaccon, arXiv:2106.09315, fast p-adic log/exp context",
+    "Douglas Colkitt and the OpenAI manuscript for the fixed-tape problem model and research workflow; no source code imported"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux x86_64",
+    "dependencies": "standard library"
+  },
+  "unrun_obligations": [
+    "Complete O(n (log n)^0.99) conversion or multiplication algorithm",
+    "A fixed-tape implementation of general shared/fused conversion",
+    "Independent author review or proof-assistant formalization",
+    "Selected-supplier cold replay and hosted CI",
+    "Complete repository-wide or literature novelty survey"
+  ],
+  "completed_checks_utc": "2026-10-16T01:16:50.450465+00:00",
+  "final_freshness": {
+    "upstream_commit": "23ef28cbeb7a3e2e985be22cab6832424bd98cf6",
+    "priority_revision": 5,
+    "utc": "2026-10-16T01:19:03.668923+00:00",
+    "compatibility": "Fetched canonical main before submission. No changes to AGENTS.md, autoresearch.md, CONTRIBUTING.md, family guidance, task catalogue, selected record or package runner relative to the scientific base. Historical source pins remain immutable.",
+    "overlap": "Final targeted exponent/conversion PR search returned circuit/controller/verification topics, not this signed-power codec and its exact precision/table boundary. Earlier exact discrete-logarithm/representation searches had no matches. Remote pagination and unpublished work are not covered."
+  },
+  "validation": {
+    "registered_package": "PASS on CPython 3.12.14; optimized isolated exact replay and all six test groups",
+    "warning_as_error_compilation": "PASS",
+    "staged_whitespace": "PASS",
+    "proof_status": "Author-checked written proofs supported by finite exact replay; no independent author or proof assistant review."
+  }
+}
