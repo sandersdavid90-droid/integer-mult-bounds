@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "PASS_GAUSSIAN_BILINEAR_COLLAPSE",
+  "target_kappa": "1/2",
+  "new_kappa": null,
+  "outcome": "explicit gauges fail the precision gate; block recentering fails the child-volume gate",
+  "square_identity_checks": 790,
+  "basis_pair_pipelines": 90,
+  "signed_block_pipelines": 20,
+  "profiles": [
+    {
+      "block_length": 2,
+      "children": 3,
+      "optimistic_volume_ratio": "3/2",
+      "optimal_log2_gauge_span_at_q_half": 2
+    },
+    {
+      "block_length": 3,
+      "children": 5,
+      "optimistic_volume_ratio": "5/3",
+      "optimal_log2_gauge_span_at_q_half": 8
+    },
+    {
+      "block_length": 4,
+      "children": 7,
+      "optimistic_volume_ratio": "7/4",
+      "optimal_log2_gauge_span_at_q_half": 18
+    },
+    {
+      "block_length": 5,
+      "children": 9,
+      "optimistic_volume_ratio": "9/5",
+      "optimal_log2_gauge_span_at_q_half": 32
+    },
+    {
+      "block_length": 6,
+      "children": 11,
+      "optimistic_volume_ratio": "11/6",
+      "optimal_log2_gauge_span_at_q_half": 50
+    }
+  ],
+  "far_pair_control": {
+    "length": 4,
+    "common_fractional_bits": 8,
+    "largest_product": "1/262144",
+    "true_middle_coefficient": 1,
+    "rounded_result": 0
+  },
+  "dense_middle_control": {
+    "length": 8,
+    "largest_value": "1",
+    "smallest_value": "1/39614081257132168796771975168",
+    "minimum_log2_range": 95,
+    "true_middle_coefficient": 8,
+    "after_32_bit_middle_rounding": 0
+  },
+  "depth_bounds": [
+    {
+      "root_log2_bits": 64,
+      "max_log2_block": 3,
+      "levels_before_half_size": 10,
+      "normalized_frontier_lower_bound": "59049/1024"
+    },
+    {
+      "root_log2_bits": 256,
+      "max_log2_block": 4,
+      "levels_before_half_size": 32,
+      "normalized_frontier_lower_bound": "1853020188851841/4294967296"
+    },
+    {
+      "root_log2_bits": 1024,
+      "max_log2_block": 5,
+      "levels_before_half_size": 102,
+      "normalized_frontier_lower_bound": "4638397686588101979328150167890591454318967698009/5070602400912917605986812821504"
+    },
+    {
+      "root_log2_bits": 4096,
+      "max_log2_block": 6,
+      "levels_before_half_size": 341,
+      "normalized_frontier_lower_bound": "4992842419769444411575714115125880074355727994157202873032702852991828893873287975661182639605572486502613841657002635137622031360394139015053716643508803196884403/4479489484355608421114884561136888556243290994469299069799978201927583742360321890761754986543214231552"
+    }
+  ],
+  "scope": "This explicit Gaussian collapse and independent local-interpolation recursion only; no general multiplication barrier."
+}

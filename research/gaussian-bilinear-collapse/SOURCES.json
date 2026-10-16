@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "base_commit": "e24ccc79caa1943fb126c61b45032fefddf2d3f2",
+  "files": [
+    {
+      "path": "certificates/selected-result.json",
+      "usage": "provenance",
+      "git_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+      "sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "path": "docs/research/agent-task-catalog.json",
+      "usage": "provenance",
+      "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+      "sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+    },
+    {
+      "path": "docs/research/assembly-domain-audit.md",
+      "usage": "provenance",
+      "git_blob": "322a1684e921f67a5f38f20087313b4fe83049d1",
+      "sha256": "2d01eb56cd206955adc462bb8401cfde427d91155d4ba9e8265ad3347564fc02"
+    },
+    {
+      "path": "research/balanced-gaussian-envelope/README.md",
+      "usage": "provenance",
+      "git_blob": "ebd3835681f6f0d0648bd6dbec26a161b3b34c2e",
+      "sha256": "fd555a20f99654b4ce1d71a64ea8d54c74c9ab6418f54e9e35678bdf3b930218"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "task_id": "uniform-transfer-audit",
+  "priority_revision": 5,
+  "base_commit": "e24ccc79caa1943fb126c61b45032fefddf2d3f2",
+  "original_card": {
+    "id": "uniform-transfer-audit",
+    "question": "Can one exact all-size/compiler, precision, hosting or restoration implication be proved or falsified?",
+    "starting_points": [
+      "certificates/selected-result.json",
+      "docs/audit.md"
+    ],
+    "methods": [
+      "Prove one missing implication with explicit quantified hypotheses.",
+      "Find an exact counterexample at the claimed interface boundary."
+    ],
+    "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/research_baseline.py"
+      ],
+      "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+      "inspect": "Read the selected review scope and choose one exact all-size or precision implication.",
+      "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Write its quantified inputs and conclusion; find a missing hypothesis or construct a minimal exact adversarial instance.",
+    "bottleneck_link": "Finite supplier improvements are useful only under the retained transfer obligations.",
+    "allowed_variations": [
+      "Choose one tape, precision, hosting or restoration lemma."
+    ],
+    "scope_change_triggers": [
+      "Replacing a quantified obligation with another finite smoke test."
+    ],
+    "overlap_terms": [
+      "uniform transfer",
+      "all-size",
+      "precision"
+    ]
+  },
+  "scope_status": "changed",
+  "actual_scope": "User-assigned kappa=1/2 moonshot: couple two Gaussian forward maps, their pointwise multiplication, and a changed inverse; test exact product-collapse algebra and its optimal separable-gauge precision bill.",
+  "scope_change_reason": "The donor explicitly chose a high-risk structural session in place of the default weighted task allocation. This is a proposed changed nonlinear consumer and resampling boundary, not another refinement of the selected finite circuit.",
+  "bottleneck_link": "The retained balanced outer formula has a Gaussian cap below 1/4; reaching 1/2 requires a changed outer mechanism and stronger primitives. This candidate tries to eliminate separate transform work through a bilinear identity.",
+  "budget_minutes": 60,
+  "stop_rule": "Test exact basis pairs first, then arbitrary-input coefficient recovery and an optimistic complete cost/precision gate. Reject the explicit-gauge realization if it needs superlinear record precision; one bounded local-recentering pivot is allowed. Do not publish a kappa claim without a complete algorithm.",
+  "outcome": "negative-result",
+  "evidence": "RESULT.json: exact paired Gaussian identity, optimal separable-gauge log range 2*delta*(N-1)^2, observable middle data range at least that minus log2(N), two actual rounded-output failures, complete locally recentered block program, and 2L-1 independent-child volume rejection. Six independent mathematical/behavioral groups pass.",
+  "author": "David (sandersdavid90-droid), with OpenAI Codex assistance",
+  "ai_assistance": "Substantial OpenAI Codex assistance in mathematical exploration, implementation, checking and writing. No separate-agent or independent-human review.",
+  "open_questions": [
+    {
+      "question": "Can a fused representation avoid the high-range middle while a joint child consumes the resulting coupled products without 2L-1 independent coarse calls?",
+      "why_it_matters": "Both precision and child volume must improve for this candidate to support the kappa=1/2 target; repairing just one returns the cost elsewhere.",
+      "first_step": "Give an exact new joint-child input/output identity, including operand bit volumes and a complete rounding/cleanup boundary; screen its full recurrence before scaling.",
+      "blocked_by": "No such changed representation and independently favorable complete recurrence is presently supplied."
+    }
+  ],
+  "target_kappa": "1/2",
+  "family_decision": "Stop the explicit staged real-damping gauges and the independent local-interpolation recursion. No downstream expansion. Target kappa=1/2 remains open under changed representations or joint children.",
+  "method": "Gaussian completion of squares; exact Fraction basis-pair replay; symbolic separable-gauge classification by mixed finite differences; exact common-format range gate and block-pair coverage accounting.",
+  "optimistic_budget": "Grant the changed inverse and all routing/initialization/restoration for free for an early rejection screen. At most O(P) actual record bits are allowed, matching the intended parent precision contract. Local Gaussian width R=O(sqrt(P)) would suggest O(N sqrt(P)) scalar interactions before charged inverse and representation work. A passing screen would not admit a supplier.",
+  "overlap": "Read current guidance, source-selected record and family status at e24ccc79. Targeted live PR searches: balanced Gaussian envelope #701, square-root pass wall #657, capped phase fusion #1673, and Gaussian/bilinear/product-collapse/heat-kernel/completing-square terms. Local historical README search and current board #1167 read. No identical named bilinear collapse found; this is targeted metadata coverage only. GitHub write denial from the earlier session persists, so claims remain LOCAL-ONLY until a public fork artifact is available.",
+  "started_utc": "2026-10-16T00:09:21.908102+00:00",
+  "predecessor_credit": [
+    "BigCactusLabs / PR701 balanced Gaussian envelope",
+    "DaysSky / PR657 scoped pass wall",
+    "Vlado Vojdanovski / PR1673 capped phase-cell fusion and retained Gaussian lineage",
+    "Harvey\u2013van der Hoeven and OpenAI manuscript / standard Gaussian resampling",
+    "Classical Gaussian completion of squares and diagonal conjugation; no elementary-identity novelty claimed"
+  ],
+  "bounded_pivot": "Recenter on small blocks. The complete literal implementation works but requires 2L-1 coarse convolution calls and fails the independent-child volume gate.",
+  "positive_changed_premise_control": "An exact Eisenstein third-root-of-unity fixture keeps all coefficients at modulus one and the interpolation matrix invertible; damping/locality disappears. This prevents a general impossibility interpretation.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux x86_64",
+    "dependencies": "standard library"
+  },
+  "unrun_obligations": [
+    "Any complete integer-multiplication implementation or new kappa",
+    "all-size native/supplier, hosting and tape admission",
+    "independently scaled or symbolic/fused intermediate representation",
+    "joint coarse-child algorithm with a smaller complete cost",
+    "independent human/agent or proof-assistant review",
+    "hosted CI"
+  ],
+  "completed_checks_utc": "2026-10-16T00:20:52.599353+00:00",
+  "final_freshness": {
+    "upstream_commit": "da4f4fec60a88d9187f8ffa02f0f787b8b2da527",
+    "priority_revision": 5,
+    "utc": "2026-10-16T00:22:33.925494+00:00",
+    "compatibility": "Guidance, selected record, package runner and the two consumed provenance sources checked for changes; original scientific pins are preserved.",
+    "overlap": "Final targeted GitHub Gaussian/collapse PR search returned only distinct circuit/restoration work; no complete remote pagination or unpublished coverage claimed."
+  },
+  "validation": {
+    "registered_package": "PASS on CPython 3.12.14; all six mathematical/behavioral groups pass",
+    "warning_as_error_compilation": "PASS",
+    "claim_scope": "Scoped written algebra/data-range and independent-child bill, supported by exact finite evidence. No general algorithmic lower bound or new kappa."
+  }
+}
